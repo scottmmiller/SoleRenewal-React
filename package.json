@@ -1,0 +1,33 @@
+{
+  "name": "SoleRenewal-React",
+  "version": "0.0.0",
+  "description": "Sole Renewal website for Leanna Christensen made w ReactJS",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scottmmiller/SoleRenewal-React.git"
+  },
+  "keywords": [
+    "SoleRenewal",
+    "ReactJS"
+  ],
+  "author": "Scott M",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottmmiller/SoleRenewal-React/issues"
+  },
+  "homepage": "https://github.com/scottmmiller/SoleRenewal-React",
+  "dependencies": {
+    "firebase": "^2.2.2",
+    "react": "^0.12.2",
+    "react-bootstrap": "^0.16.1",
+    "react-router": "^0.12.4"
+  },
+  "devDependencies": {
+    "jsx-loader": "^0.12.2",
+    "webpack": "^1.7.2"
+  }
+}
