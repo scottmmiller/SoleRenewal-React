@@ -419,58 +419,23 @@
 			var errors = this.state.error ? React.createElement("p", null, " Error on Login ") : "";
 			return (
 				React.createElement("div", null, 
-					React.createElement("div", {style: {textAlign: "center", color: "red"}}, 
-					"All fields are REQUIRED!!!"
+					React.createElement("div", {style: {textAlign: "center", color: "green", fontSize: "18px"}}, 
+					"Please Login!!!"
 					), 
 					React.createElement("form", {onSubmit: this.handleSubmit}, 
 						React.createElement("div", {className: "row"}, 
-							React.createElement("div", {className: "col-sm-3 col-sm-offset-3"}, 
+							React.createElement("div", {className: "col-sm-4 col-sm-offset-4"}, 
 								React.createElement("div", {className: "form-group"}, 
-									React.createElement("label", null, "First Name"), 
-									React.createElement("input", {type: "text", className: "form-control", ref: "firstName", placeholder: "First Name"})
-								), 
-								React.createElement("div", {className: "form-group"}, 
-									React.createElement("label", null, "Last Name"), 
-									React.createElement("input", {type: "text", className: "form-control", ref: "lastName", placeholder: "Last Name"})
-								), 
-								React.createElement("div", {className: "form-group"}, 
-									React.createElement("label", null, "Phone Number"), 
-									React.createElement("input", {type: "tel", className: "form-control", ref: "phone", placeholder: "Phone"})
-								), 
-									React.createElement("div", {className: "form-group"}, 
 										React.createElement("label", null, "Email"), 
 										React.createElement("input", {className: "form-control", type: "email", ref: "email", placeholder: "Email"})
-									), 
-									React.createElement("div", {className: "form-group"}, 
+								), 
+								React.createElement("div", {className: "form-group"}, 
 										React.createElement("label", null, "Password"), 
 										React.createElement("input", {ref: "pw", type: "password", className: "form-control", placeholder: "Password"})
-									)
-							), 
-
-							React.createElement("div", {className: "col-sm-3"}, 
-								React.createElement("div", {className: "form-group"}, 
-									React.createElement("label", null, "Address"), 
-									React.createElement("input", {type: "text", className: "form-control", ref: "address", placeholder: "Address"})
-								), 
-								React.createElement("div", {className: "form-group"}, 
-									React.createElement("label", null, "City"), 
-									React.createElement("input", {type: "text", className: "form-control", ref: "city", placeholder: "City"})
-								), 
-									React.createElement("div", {className: "form-group"}, 
-										React.createElement("label", null, "State"), 
-										React.createElement("input", {className: "form-control", type: "text", ref: "state", placeholder: "State"})
-									), 
-									React.createElement("div", {className: "form-group"}, 
-										React.createElement("label", null, "ZIP"), 
-										React.createElement("input", {ref: "zip", type: "text", className: "form-control", placeholder: "ZIP"})
-									), 
-									React.createElement("div", {className: "form-group"}, 
-										React.createElement("label", null, "PIN"), 
-										React.createElement("input", {ref: "pin", type: "number", className: "form-control", placeholder: "PIN"})
-									)
+								)
 							)
 						), 
-								React.createElement("div", {className: "col-sm-3 col-sm-offset-8"}, 
+								React.createElement("div", {className: "col-sm-3 col-sm-offset-4"}, 
 										React.createElement("button", {type: "submit", className: "btn btn-primary"}, "Login")
 								)
 								
