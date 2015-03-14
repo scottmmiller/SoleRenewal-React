@@ -238,14 +238,14 @@
 			ref.child("user/" + email).once("value", function(snapshot) {
 				console.log(snapshot.val())
 				this.setState({
-					name: snapshot.val().firstName
+					name: "Welcome " + snapshot.val().firstName
 				})
 			}.bind(this));
 		},
 
 		render: function() {
 			return (
-				React.createElement("h3", null, " Welcome ", this.state.name, " ")
+				React.createElement("h3", null, " ", this.state.name, " ")
 			)
 		}
 	});

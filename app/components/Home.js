@@ -16,14 +16,14 @@ var Home = React.createClass({
 		ref.child("user/" + email).once("value", function(snapshot) {
 			console.log(snapshot.val())
 			this.setState({
-				name: snapshot.val().firstName
+				name: "Welcome " + snapshot.val().firstName
 			})
 		}.bind(this));
 	},
 
 	render: function() {
 		return (
-			<h3> Welcome {this.state.name} </h3>
+			<h3> {this.state.name} </h3>
 		)
 	}
 });
